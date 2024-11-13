@@ -4,6 +4,7 @@ class Shipping:
         self.address = None
         self.__shipping_date = None
         self.__delivery_date = None
+        # TODO: Implementar enum del status
         self.status = None
         # TODO: Relacionar el atributo __shopping_cart con la clase ShoppingCart
         self.shopping_cart = None
