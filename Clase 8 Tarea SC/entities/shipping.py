@@ -5,6 +5,7 @@ class Shipping:
         self.__shipping_date = None
         self.__delivery_date = None
         self.status = None
+        # TODO: Relacionar el atributo __shopping_cart con la clase ShoppingCart
         self.shopping_cart = None
 
     def get_id(self) -> int:

@@ -3,8 +3,10 @@ from entities.product import Product
 class ShoppingCart:
     def __init__(self) -> None:
         self.__id = None
+        # TODO: Implementar shopping cart date
         self.__shopping_cart_date = None
         self.__products = []
+        # TODO: Implementar relacion del cliente con el carro de compra
 
     def get_id(self) -> int:
         return self.__id

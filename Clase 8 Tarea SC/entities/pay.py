@@ -2,6 +2,7 @@ class Pay:
     def __init__(self) -> None:
         self.__id = None
         self.__payment_date = None
+        # TODO: Relacionar el atributo __shopping_cart con la clase ShoppingCart
         self.__shopping_cart = None
     
     def get_id(self) -> int:
