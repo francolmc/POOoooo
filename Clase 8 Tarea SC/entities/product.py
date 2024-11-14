@@ -21,11 +21,12 @@ class Product:
         return self.__stock
     
     def add_stock(self, stock: int) -> None:
-        # TODO: Controlar la existencia del stock
         self.__stock = self.__stock + stock
     
     def remove_stock(self, stock: int) -> None:
-        # TODO: Controlar la existencia del stock
-        self.__stock = self.__stock - stock
+        if (self.__stock < stock):
+            print("ERROR: no hay stock suficiente.")
+        else:
+            self.__stock = self.__stock - stock
 
     
