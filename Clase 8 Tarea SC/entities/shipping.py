@@ -1,3 +1,5 @@
+from entities.status import Status
+
 class Shipping:
     def __init__(self) -> None:
         self.__id = None
@@ -5,7 +7,7 @@ class Shipping:
         self.__shipping_date = None
         self.__delivery_date = None
         # TODO: Implementar enum del status
-        self.status = None
+        self.__status = None
         # TODO: Relacionar el atributo __shopping_cart con la clase ShoppingCart
         self.shopping_cart = None
 
@@ -28,3 +30,9 @@ class Shipping:
     def set_delivery_date(self, delivery_date: str) -> None:
         # TODO: Validar el formato de fecha ingresado YYYY-MM-DD
         self.__delivery_date = delivery_date
+
+    def get_status(self) -> Status:
+        return self.__status
+    
+    def set_status(self, status: Status):
+        self.__status = status
