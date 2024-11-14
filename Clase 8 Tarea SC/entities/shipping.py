@@ -1,4 +1,5 @@
 from entities.status import Status
+from entities.shopping_cart import ShoppingCart
 
 class Shipping:
     def __init__(self) -> None:
@@ -6,10 +7,8 @@ class Shipping:
         self.address = None
         self.__shipping_date = None
         self.__delivery_date = None
-        # TODO: Implementar enum del status
         self.__status = None
-        # TODO: Relacionar el atributo __shopping_cart con la clase ShoppingCart
-        self.shopping_cart = None
+        self.__shopping_cart = None
 
     def get_id(self) -> int:
         return self.__id
@@ -36,3 +35,9 @@ class Shipping:
     
     def set_status(self, status: Status):
         self.__status = status
+
+    def get_shopping_cart(self) -> ShoppingCart:
+        return self.__shopping_cart
+    
+    def set_shopping_cart(self, shopping_cart: ShoppingCart):
+        self.__shopping_cart = shopping_cart
