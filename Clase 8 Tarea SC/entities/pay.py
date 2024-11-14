@@ -1,8 +1,9 @@
+from entities.shopping_cart import ShoppingCart
+
 class Pay:
     def __init__(self) -> None:
         self.__id = None
         self.__payment_date = None
-        # TODO: Relacionar el atributo __shopping_cart con la clase ShoppingCart
         self.__shopping_cart = None
     
     def get_id(self) -> int:
@@ -20,5 +21,5 @@ class Pay:
     def get_shopping_cart(self) -> int:
         return self.__shopping_cart
     
-    def set_shopping_cart(self, shopping_cart: int) -> None:
+    def set_shopping_cart(self, shopping_cart: ShoppingCart) -> None:
         self.__shopping_cart = shopping_cart
