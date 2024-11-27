@@ -12,10 +12,11 @@ class MySQLConnection(Connection):
         )
         self.__cursor = self.__connection.cursor()
 
-    def execute(self, sql: str):
-        self.__cursor.execute(sql)
+    def execute(self, sql: str, args: object = None):
+        self.__cursor.execute(sql, args)
 
     def commit(self):
+        
         self.__connection.commit()
 
     def close(self):

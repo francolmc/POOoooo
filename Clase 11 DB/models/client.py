@@ -1,9 +1,15 @@
 class Client:
     def __init__(self) -> None:
-        # TODO: Agregar el atributo id
+        self.__id: int = -1
         self.__name: str = ""
         self.__email: str = ""
     
+    def get_id(self):
+        return self.__id
+    
+    def set_id(self, id: int):
+        self.__id = id
+
     def get_name(self) -> str:
         return self.__name
     
